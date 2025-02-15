@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Populations and Samples – Thinking in Statistics</title>
+<title>Population and Sample – Thinking in Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li><li class="breadcrumb-item"><a href="./week2-lecture.html">Population and Sample</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week2-lecture.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Populations and Samples</span></a>
+ <span class="menu-text">Population and Sample</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -169,15 +169,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-makes-a-sample-representative" id="toc-what-makes-a-sample-representative" class="nav-link active" data-scroll-target="#what-makes-a-sample-representative"><strong>What Makes a Sample Representative?</strong></a></li>
+  <li><a href="#statistical-inference-learning-about-the-population-from-a-sample" id="toc-statistical-inference-learning-about-the-population-from-a-sample" class="nav-link" data-scroll-target="#statistical-inference-learning-about-the-population-from-a-sample"><strong>Statistical Inference: Learning About the Population from a Sample</strong></a></li>
+  <li><a href="#population-parameters-vs.-sample-statistics" id="toc-population-parameters-vs.-sample-statistics" class="nav-link" data-scroll-target="#population-parameters-vs.-sample-statistics"><strong>Population Parameters vs.&nbsp;Sample Statistics</strong></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li><li class="breadcrumb-item"><a href="./week2-lecture.html">Population and Sample</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Populations and Samples</h1>
+<h1 class="title">Population and Sample</h1>
 </div>
 
 
@@ -194,8 +202,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Let’s revisit our initial question: <strong>Does drug X treat ailment Y in species Z?</strong></p>
+<p>The first step in answering this question is to define the <strong>population</strong> of interest. In this case, the population includes <strong>all members of species Z who have ailment Y</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Defining Population and Sample</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>Population</strong>: The entire group we want to study or draw conclusions about.</p></li>
+<li><p><strong>Sample</strong>: A subset of the population that is selected for study.</p></li>
+</ul>
+</div>
+</div>
+<p>In many cases, studying an entire population is impractical due to its large size or inaccessibility. Instead, researchers work with a <strong>sample</strong>, a smaller group carefully chosen to represent the broader population.</p>
+<section id="what-makes-a-sample-representative" class="level3">
+<h3 class="anchored" data-anchor-id="what-makes-a-sample-representative"><strong>What Makes a Sample Representative?</strong></h3>
+<p>A <strong>representative sample</strong> is a subset of the population that accurately reflects its characteristics. For a sample to be considered representative, every member of the population should have a <strong>non-zero probability</strong> of being selected. Ideally, in <strong>random sampling</strong>, each member has an equal chance of selection, reducing bias.</p>
+<p>A whole field of <strong>sampling theory</strong> explores different ways to select samples, including:</p>
+<ul>
+<li><p><strong>Simple Random Sampling</strong> – Every individual has an equal chance of selection.</p></li>
+<li><p><strong>Stratified Sampling</strong> – The population is divided into subgroups, and random samples are taken from each.</p></li>
+<li><p><strong>Cluster Sampling</strong> – The population is divided into clusters, and entire clusters are randomly selected.</p></li>
+<li><p><strong>Systematic Sampling</strong> – Every nth individual is chosen from a list.</p></li>
+</ul>
+</section>
+<section id="statistical-inference-learning-about-the-population-from-a-sample" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-inference-learning-about-the-population-from-a-sample"><strong>Statistical Inference: Learning About the Population from a Sample</strong></h3>
+<p>Since studying an entire population is often impossible, we rely on <strong>statistical inference</strong>, which is the process of drawing conclusions about a <strong>population</strong> based on <strong>data from a sample</strong>.</p>
+<p>There are two main types of statistical inference:</p>
+<ol type="1">
+<li><p><strong>Estimation</strong> – Using sample statistics (e.g., sample mean) to estimate population parameters (e.g., population mean). Examples include:</p>
+<ul>
+<li><p><strong>Point estimation</strong> (e.g., using the sample mean as an estimate of the population mean).</p></li>
+<li><p><strong>Confidence intervals</strong>, which provide a range of plausible values for the population parameter.</p></li>
+</ul></li>
+<li><p><strong>Hypothesis Testing</strong> – Using sample data to test assumptions about the population. For example:</p>
+<ul>
+<li><p>Testing whether <strong>drug X significantly improves health outcomes</strong> in species Z.</p></li>
+<li><p>Determining whether <strong>two groups have different average responses</strong> to a treatment.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="population-parameters-vs.-sample-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="population-parameters-vs.-sample-statistics"><strong>Population Parameters vs.&nbsp;Sample Statistics</strong></h3>
+<p>The goal of using a sample is to <strong>infer information about the population</strong>. The characteristics we study can be numerical (e.g., average age) or categorical (e.g., proportion of individuals responding to a drug).</p>
+<ul>
+<li><p><strong>Parameter</strong>: A fixed but often unobservable value that describes a characteristic of the entire population (e.g., the true average age of species Z worldwide).</p></li>
+<li><p><strong>Statistic</strong>: A value computed from the sample that estimates the corresponding population parameter (e.g., the average age in a sample of species Z).</p></li>
+</ul>
+<section id="key-relationships" class="level4">
+<h4 class="anchored" data-anchor-id="key-relationships"><strong>Key Relationships</strong></h4>
+<ul>
+<li><p><strong>Population → Parameter</strong> (e.g., true average lifespan)</p></li>
+<li><p><strong>Sample → Statistic</strong> (e.g., sample mean lifespan)</p></li>
+</ul>
+<p>A well-chosen <strong>representative sample</strong> ensures that <strong>sample statistics</strong> closely approximate <strong>population parameters</strong>. However, due to <strong>sampling variability</strong>, the sample statistic will never be exactly equal to the population parameter. Statistical inference methods, such as <strong>confidence intervals</strong> and <strong>hypothesis testing</strong>, help quantify uncertainty and determine how well our sample estimates generalize to the population.</p>
+<p>By selecting a robust sample and applying appropriate statistical techniques, we can make valid and reliable inferences about the population.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
