@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Population and Sample – Thinking in Statistics</title>
+<title>How do we know a fact about the world? – Thinking in Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li><li class="breadcrumb-item"><a href="./week2-lecture.html">Population and Sample</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li><li class="breadcrumb-item"><a href="./week2-lecture.html">How do we know a fact about the world?</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -182,7 +182,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week2-lecture.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Population and Sample</span></a>
+ <span class="menu-text">How do we know a fact about the world?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -209,30 +209,31 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-makes-a-sample-representative" id="toc-what-makes-a-sample-representative" class="nav-link active" data-scroll-target="#what-makes-a-sample-representative"><strong>What Makes a Sample Representative?</strong></a></li>
-  <li><a href="#statistical-inference-learning-about-the-population-from-a-sample" id="toc-statistical-inference-learning-about-the-population-from-a-sample" class="nav-link" data-scroll-target="#statistical-inference-learning-about-the-population-from-a-sample"><strong>Statistical Inference: Learning About the Population from a Sample</strong></a></li>
-  <li><a href="#population-parameters-vs.-sample-statistics" id="toc-population-parameters-vs.-sample-statistics" class="nav-link" data-scroll-target="#population-parameters-vs.-sample-statistics"><strong>Population Parameters vs.&nbsp;Sample Statistics</strong></a></li>
-  <li><a href="#what-is-a-random-variable" id="toc-what-is-a-random-variable" class="nav-link" data-scroll-target="#what-is-a-random-variable"><strong>What is a Random Variable?</strong></a>
+  <li><a href="#statistical-inference-learning-about-the-population-from-a-sample" id="toc-statistical-inference-learning-about-the-population-from-a-sample" class="nav-link active" data-scroll-target="#statistical-inference-learning-about-the-population-from-a-sample">Statistical Inference: Learning About the Population from a Sample</a></li>
+  <li><a href="#what-makes-a-sample-representative" id="toc-what-makes-a-sample-representative" class="nav-link" data-scroll-target="#what-makes-a-sample-representative">What Makes a Sample Representative?</a></li>
+  <li><a href="#population-parameters-vs.-sample-statistics" id="toc-population-parameters-vs.-sample-statistics" class="nav-link" data-scroll-target="#population-parameters-vs.-sample-statistics">Population Parameters vs.&nbsp;Sample Statistics</a></li>
+  <li><a href="#what-is-a-random-variable" id="toc-what-is-a-random-variable" class="nav-link" data-scroll-target="#what-is-a-random-variable">What is a Random Variable?</a>
   <ul class="collapse">
-  <li><a href="#types-of-random-variables" id="toc-types-of-random-variables" class="nav-link" data-scroll-target="#types-of-random-variables"><strong>Types of Random Variables</strong></a></li>
+  <li><a href="#types-of-random-variables" id="toc-types-of-random-variables" class="nav-link" data-scroll-target="#types-of-random-variables">Types of Random Variables</a></li>
   </ul></li>
-  <li><a href="#why-is-a-statistic-a-random-variable" id="toc-why-is-a-statistic-a-random-variable" class="nav-link" data-scroll-target="#why-is-a-statistic-a-random-variable"><strong>Why is a Statistic a Random Variable?</strong></a></li>
-  <li><a href="#what-is-a-random-sample" id="toc-what-is-a-random-sample" class="nav-link" data-scroll-target="#what-is-a-random-sample"><strong>What is a Random Sample?</strong></a>
+  <li><a href="#why-is-a-statistic-a-random-variable" id="toc-why-is-a-statistic-a-random-variable" class="nav-link" data-scroll-target="#why-is-a-statistic-a-random-variable">Why is a Statistic a Random Variable?</a></li>
+  <li><a href="#what-is-a-random-sample" id="toc-what-is-a-random-sample" class="nav-link" data-scroll-target="#what-is-a-random-sample">What is a Random Sample?</a>
   <ul class="collapse">
-  <li><a href="#characteristics-of-a-random-sample" id="toc-characteristics-of-a-random-sample" class="nav-link" data-scroll-target="#characteristics-of-a-random-sample"><strong>Characteristics of a Random Sample</strong></a></li>
-  <li><a href="#types-of-random-sampling" id="toc-types-of-random-sampling" class="nav-link" data-scroll-target="#types-of-random-sampling"><strong>Types of Random Sampling</strong></a></li>
-  <li><a href="#why-is-random-sampling-important" id="toc-why-is-random-sampling-important" class="nav-link" data-scroll-target="#why-is-random-sampling-important"><strong>Why is Random Sampling Important?</strong></a></li>
+  <li><a href="#characteristics-of-a-random-sample" id="toc-characteristics-of-a-random-sample" class="nav-link" data-scroll-target="#characteristics-of-a-random-sample">Characteristics of a Random Sample</a></li>
+  <li><a href="#types-of-random-sampling" id="toc-types-of-random-sampling" class="nav-link" data-scroll-target="#types-of-random-sampling">Types of Random Sampling</a></li>
+  <li><a href="#why-is-random-sampling-important" id="toc-why-is-random-sampling-important" class="nav-link" data-scroll-target="#why-is-random-sampling-important">Why is Random Sampling Important?</a></li>
   </ul></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><strong>Key Takeaways</strong></a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  <li><a href="#illustrative-example" id="toc-illustrative-example" class="nav-link" data-scroll-target="#illustrative-example">Illustrative Example</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li><li class="breadcrumb-item"><a href="./week2-lecture.html">Population and Sample</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week2-lecture.html">Populations and Samples</a></li><li class="breadcrumb-item"><a href="./week2-lecture.html">How do we know a fact about the world?</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Population and Sample</h1>
+<h1 class="title">How do we know a fact about the world?</h1>
 </div>
 
 
@@ -257,7 +258,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<strong>Defining Population and Sample</strong>
+Defining Population and Sample
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -268,19 +269,8 @@ window.Quarto = {
 </div>
 </div>
 <p>In most cases, studying an entire population is impractical due to its large size or inaccessibility. Instead, researchers work with a <strong>sample</strong>, a smaller group carefully chosen to represent the broader population.</p>
-<section id="what-makes-a-sample-representative" class="level3">
-<h3 class="anchored" data-anchor-id="what-makes-a-sample-representative"><strong>What Makes a Sample Representative?</strong></h3>
-<p>A <strong>representative sample</strong> is a subset of the population that accurately reflects its characteristics. For a sample to be considered representative, every member of the population should have a <strong>non-zero probability</strong> of being selected. Ideally, in <strong>random sampling</strong>, each member has an equal chance of selection, reducing bias.</p>
-<p>A whole field of <strong>sampling theory</strong> explores different ways to select samples, including:</p>
-<ul>
-<li><p><strong>Simple Random Sampling</strong> – Every individual has an equal chance of selection.</p></li>
-<li><p><strong>Stratified Sampling</strong> – The population is divided into subgroups, and random samples are taken from each.</p></li>
-<li><p><strong>Cluster Sampling</strong> – The population is divided into clusters, and entire clusters are randomly selected.</p></li>
-<li><p><strong>Systematic Sampling</strong> – Every nth individual is chosen from a list.</p></li>
-</ul>
-</section>
 <section id="statistical-inference-learning-about-the-population-from-a-sample" class="level3">
-<h3 class="anchored" data-anchor-id="statistical-inference-learning-about-the-population-from-a-sample"><strong>Statistical Inference: Learning About the Population from a Sample</strong></h3>
+<h3 class="anchored" data-anchor-id="statistical-inference-learning-about-the-population-from-a-sample">Statistical Inference: Learning About the Population from a Sample</h3>
 <p>Since studying an entire population is often impossible, we rely on <strong>statistical inference</strong>, which is the process of drawing conclusions about a <strong>population</strong> based on <strong>data from a sample</strong>.</p>
 <p>There are two main types of statistical inference:</p>
 <ol type="1">
@@ -295,16 +285,28 @@ window.Quarto = {
 <li><p>Determining whether <strong>two groups have different average responses</strong> to a treatment.</p></li>
 </ul></li>
 </ol>
+<p>We do these by getting a <strong>representative</strong> sample.</p>
+</section>
+<section id="what-makes-a-sample-representative" class="level3">
+<h3 class="anchored" data-anchor-id="what-makes-a-sample-representative">What Makes a Sample Representative?</h3>
+<p>A <strong>representative sample</strong> is a subset of the population that accurately reflects its characteristics. For a sample to be considered representative, every member of the population should have a <strong>non-zero probability</strong> of being selected. Ideally, in <strong>random sampling</strong>, each member has an equal chance of selection, reducing bias.</p>
+<p>A whole field of <strong>sampling theory</strong> explores different ways to select samples, including:</p>
+<ul>
+<li><p><strong>Simple Random Sampling</strong> – Every individual has an equal chance of selection.</p></li>
+<li><p><strong>Stratified Sampling</strong> – The population is divided into subgroups, and random samples are taken from each.</p></li>
+<li><p><strong>Cluster Sampling</strong> – The population is divided into clusters, and entire clusters are randomly selected.</p></li>
+<li><p><strong>Systematic Sampling</strong> – Every nth individual is chosen from a list.</p></li>
+</ul>
 </section>
 <section id="population-parameters-vs.-sample-statistics" class="level3">
-<h3 class="anchored" data-anchor-id="population-parameters-vs.-sample-statistics"><strong>Population Parameters vs.&nbsp;Sample Statistics</strong></h3>
+<h3 class="anchored" data-anchor-id="population-parameters-vs.-sample-statistics">Population Parameters vs.&nbsp;Sample Statistics</h3>
 <p>The goal of using a sample is to <strong>infer information about the population</strong>. The characteristics we study can be numerical (e.g., average age) or categorical (e.g., proportion of individuals responding to a drug).</p>
 <ul>
 <li><p><strong>Parameter</strong>: A fixed but often unobservable value that describes a characteristic of the entire population (e.g., the true average age of species Z worldwide).</p></li>
 <li><p><strong>Statistic</strong>: A value computed from the sample that estimates the corresponding population parameter (e.g., the average age in a sample of species Z).</p></li>
 </ul>
 <section id="key-relationships" class="level4">
-<h4 class="anchored"><strong>Key Relationships</strong></h4>
+<h4 class="anchored">Key Relationships</h4>
 <ul>
 <li><p><strong>Population → Parameter</strong> (e.g., true average lifespan)</p></li>
 <li><p><strong>Sample → Statistic</strong> (e.g., sample mean lifespan)</p></li>
@@ -329,12 +331,12 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<strong>Technical: Parameters vs.&nbsp;Statistics</strong>
+Technical: Parameters vs.&nbsp;Statistics
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <section id="population-parameter" class="level3">
-<h3 class="anchored" data-anchor-id="population-parameter"><strong>Population Parameter</strong></h3>
+<h3 class="anchored" data-anchor-id="population-parameter">Population Parameter</h3>
 <p>A <strong>parameter</strong> is a numerical value that describes some characteristic of an entire population. It is typically fixed but unknown.</p>
 <ul>
 <li>Examples of parameters:
@@ -347,13 +349,13 @@ window.Quarto = {
 <p>Since a parameter describes the entire population, it does not change from sample to sample—it is a <strong>fixed value</strong> (though unknown).</p>
 </section>
 <section id="sample-statistic" class="level3">
-<h3 class="anchored" data-anchor-id="sample-statistic"><strong>Sample Statistic</strong></h3>
+<h3 class="anchored" data-anchor-id="sample-statistic">Sample Statistic</h3>
 <p>A <strong>statistic</strong> is a numerical value computed from a <strong>sample</strong>. It is used to estimate the corresponding population parameter.</p>
 <ul>
 <li>Examples of statistics:
 <ul>
 <li><p><strong>Sample mean</strong>: <span class="math inline">\(\bar{X} = \frac{1}{n} \sum X_i\)</span></p></li>
-<li><p><strong>Sample variance</strong>: $S^2 = (X_i - {X})^2 $</p></li>
+<li><p><strong>Sample variance</strong>: <span class="math inline">\(S^2 = \frac{1}{n-1} \sum (X_i - \bar{X})^2\)</span></p></li>
 <li><p><strong>Sample proportion</strong>: <span class="math inline">\(\hat{p} = \frac{X}{n}\)</span></p></li>
 </ul></li>
 </ul>
@@ -365,10 +367,10 @@ window.Quarto = {
 </section>
 </section>
 <section id="what-is-a-random-variable" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-random-variable"><strong>What is a Random Variable?</strong></h2>
+<h2 class="anchored" data-anchor-id="what-is-a-random-variable">What is a Random Variable?</h2>
 <p>A <strong>random variable (RV)</strong> is a numerical value whose outcome depends on a random experiment.</p>
 <section id="types-of-random-variables" class="level3">
-<h3 class="anchored" data-anchor-id="types-of-random-variables"><strong>Types of Random Variables</strong></h3>
+<h3 class="anchored" data-anchor-id="types-of-random-variables">Types of Random Variables</h3>
 <ul>
 <li><strong>Discrete Random Variable</strong>: Takes on a countable number of values.
 <ul>
@@ -384,17 +386,17 @@ window.Quarto = {
 </section>
 </section>
 <section id="why-is-a-statistic-a-random-variable" class="level2">
-<h2 class="anchored" data-anchor-id="why-is-a-statistic-a-random-variable"><strong>Why is a Statistic a Random Variable?</strong></h2>
+<h2 class="anchored" data-anchor-id="why-is-a-statistic-a-random-variable">Why is a Statistic a Random Variable?</h2>
 <p>A <strong>sample statistic is a random variable</strong> because: 1. <strong>It is computed from a random sample</strong>, meaning its value varies across different samples. 2. <strong>It has a probability distribution</strong>, known as the <strong>sampling distribution</strong>. 3. <strong>It is subject to sampling variability</strong>, meaning different samples lead to different statistic values. 4. <strong>It is used to estimate fixed population parameters</strong>, but each sample produces a different estimate.</p>
 <p>By contrast, a <strong>population parameter is not a random variable</strong> because it is a fixed, though unknown, quantity describing the entire population.</p>
 <hr>
 <hr>
 </section>
 <section id="what-is-a-random-sample" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-random-sample"><strong>What is a Random Sample?</strong></h2>
+<h2 class="anchored" data-anchor-id="what-is-a-random-sample">What is a Random Sample?</h2>
 <p>A <strong>random sample</strong> is a subset of a population selected in such a way that every member of the population has a known, nonzero probability of being included. The key characteristic of a random sample is that it is selected <strong>without bias</strong>, ensuring that it represents the population as accurately as possible.</p>
 <section id="characteristics-of-a-random-sample" class="level3">
-<h3 class="anchored" data-anchor-id="characteristics-of-a-random-sample"><strong>Characteristics of a Random Sample</strong></h3>
+<h3 class="anchored" data-anchor-id="characteristics-of-a-random-sample">Characteristics of a Random Sample</h3>
 <ol type="1">
 <li><strong>Each member of the population has a chance of being selected</strong>
 <ul>
@@ -412,7 +414,7 @@ window.Quarto = {
 </ol>
 </section>
 <section id="types-of-random-sampling" class="level3">
-<h3 class="anchored" data-anchor-id="types-of-random-sampling"><strong>Types of Random Sampling</strong></h3>
+<h3 class="anchored" data-anchor-id="types-of-random-sampling">Types of Random Sampling</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 42%">
@@ -451,7 +453,7 @@ window.Quarto = {
 </table>
 </section>
 <section id="why-is-random-sampling-important" class="level3">
-<h3 class="anchored" data-anchor-id="why-is-random-sampling-important"><strong>Why is Random Sampling Important?</strong></h3>
+<h3 class="anchored" data-anchor-id="why-is-random-sampling-important">Why is Random Sampling Important?</h3>
 <ul>
 <li><strong>Minimizes bias</strong>: Ensures that sample selection is not influenced by external factors.</li>
 <li><strong>Allows for generalization</strong>: Properly selected samples help make valid <strong>statistical inferences</strong> about the population.</li>
@@ -464,11 +466,10 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Comparison Table
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>##<strong>Comparison Table</strong></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 21%">
@@ -489,7 +490,7 @@ Note
 <td><strong>Parameter</strong></td>
 <td>A fixed numerical value describing a population</td>
 <td>❌ No</td>
-<td>Population mean (|</td>
+<td>Population mean</td>
 </tr>
 <tr class="even">
 <td><strong>Random Variable</strong></td>
@@ -505,7 +506,7 @@ Note
 </section>
 </section>
 <section id="key-takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="key-takeaways"><strong>Key Takeaways</strong></h2>
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
 <ul>
 <li>A <strong>parameter</strong> is a fixed (but unknown) value for a population.</li>
 <li>A <strong>statistic</strong> is calculated from a sample and varies with different samples.</li>
@@ -514,13 +515,16 @@ Note
 <li>Statistical inference uses <strong>sample statistics</strong> to estimate <strong>population parameters</strong>.</li>
 </ul>
 <p>Understanding these distinctions is essential for correctly interpreting results in inferential statistics!</p>
+</section>
+<section id="illustrative-example" class="level2">
+<h2 class="anchored" data-anchor-id="illustrative-example">Illustrative Example</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<strong>Illustrative Example</strong>
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -528,30 +532,30 @@ Note
 <p><strong>“Does Drug X treat Ailment Y in Species Z?”</strong></p>
 <p>We will define these concepts using concrete values.</p>
 <section id="defining-the-population-and-sample" class="level3">
-<h3 class="anchored" data-anchor-id="defining-the-population-and-sample"><strong>1. Defining the Population and Sample</strong></h3>
+<h3 class="anchored" data-anchor-id="defining-the-population-and-sample">1. Defining the Population and Sample</h3>
 <ul>
 <li><strong>Population</strong>: All members of species Z who have ailment Y.</li>
 <li><strong>Sample</strong>: A randomly selected group of 200 individuals from this population.</li>
 </ul>
 </section>
 <section id="population-parameter-fixed-but-unknown" class="level3">
-<h3 class="anchored" data-anchor-id="population-parameter-fixed-but-unknown"><strong>2. Population Parameter (Fixed but Unknown)</strong></h3>
+<h3 class="anchored" data-anchor-id="population-parameter-fixed-but-unknown">2. Population Parameter (Fixed but Unknown)</h3>
 <p>The true effectiveness rate of Drug X in the entire population is a <strong>parameter</strong>. - Suppose the actual proportion of individuals in the entire population who recover with Drug X is <span class="math inline">\(p = 0.75\)</span> (i.e., 75% recover). - Since this value is for the <strong>entire population</strong>, it is fixed but typically unknown.</p>
 </section>
 <section id="sample-statistic-random-and-varies-with-sample" class="level3">
-<h3 class="anchored" data-anchor-id="sample-statistic-random-and-varies-with-sample"><strong>3. Sample Statistic (Random and Varies with Sample)</strong></h3>
+<h3 class="anchored" data-anchor-id="sample-statistic-random-and-varies-with-sample">3. Sample Statistic (Random and Varies with Sample)</h3>
 <p>We randomly select <strong>200 individuals</strong> from the population and administer Drug X. After a treatment period, we find that <strong>148 individuals recovered</strong>. - The <strong>sample proportion</strong> of recovery is: <span class="math display">\[ \hat{p} = \frac{148}{200} = 0.74 \]</span> - This is a <strong>statistic</strong> because it is computed from the sample. - If we repeat this experiment with a different sample, we might get a different recovery rate (e.g., 0.72, 0.76, etc.), showing that the sample statistic is <strong>not fixed</strong>.</p>
 </section>
 <section id="random-variable-interpretation" class="level3">
-<h3 class="anchored" data-anchor-id="random-variable-interpretation"><strong>4. Random Variable Interpretation</strong></h3>
+<h3 class="anchored" data-anchor-id="random-variable-interpretation">4. Random Variable Interpretation</h3>
 <p>Since the sample statistic (<span class="math inline">\(\hat{p}\)</span>) changes with different samples, it is a <strong>random variable</strong>. - The sampling distribution of <span class="math inline">\(\hat{p}\)</span> follows an <strong>approximate normal distribution</strong> when the sample size is large. - Its mean is approximately equal to the population proportion: <span class="math display">\[E[\hat{p}] = p = 0.75\]</span> - The variability of <span class="math inline">\(\hat{p}\)</span> depends on the sample size: <span class="math display">\[\text{Standard error} = \sqrt{ \frac{p(1 - p)}{n} } = \sqrt{ \frac{0.75(0.25)}{200} } \approx 0.03\]</span> - This distribution allows us to make inferences about the true population proportion.</p>
 </section>
 <section id="random-sampling-and-bias-avoidance" class="level3">
-<h3 class="anchored" data-anchor-id="random-sampling-and-bias-avoidance"><strong>5. Random Sampling and Bias Avoidance</strong></h3>
+<h3 class="anchored" data-anchor-id="random-sampling-and-bias-avoidance">5. Random Sampling and Bias Avoidance</h3>
 <p>To ensure valid conclusions, the sample must be <strong>randomly selected</strong>: - <strong>Simple Random Sample (SRS)</strong>: Each individual in the population has an equal chance of being selected. - <strong>Stratified Sampling</strong>: If species Z has multiple subgroups (e.g., age groups), we may ensure each is proportionally represented. - <strong>Cluster Sampling</strong>: If studying individuals across multiple habitats, we may randomly select some entire habitats.</p>
 </section>
 <section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion"><strong>6. Conclusion</strong></h3>
+<h3 class="anchored" data-anchor-id="conclusion">6. Conclusion</h3>
 <p>In this example: - <span class="math inline">\(p = 0.75\)</span> (Population parameter) is fixed but unknown. - <span class="math inline">\(\hat{p} = 0.74\)</span> (Sample statistic) varies across samples, making it a <strong>random variable</strong>. - The more samples we take, the closer our estimates of <span class="math inline">\(p\)</span> become, thanks to statistical inference.</p>
 <p>By using random sampling, appropriate statistical methods, and understanding the nature of statistics as random variables, we can draw reliable conclusions about Drug X’s effectiveness in treating Ailment Y in Species Z.</p>
 </section>

@@ -1,0 +1,274 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Thinking in Statistics",
+    "section": "",
+    "text": "Preface\n\n\n\n\n\nCliché is just an un-sexy truth. Source\n\n\n\n\nThis introductory course covers basic statistical concepts with a focus on real-world application and data analysis using R. We will learn how to collect, analyze, and interpret data, as well as present the findings. The course is designed for beginners and does not require prior programming experience.\nFollowing are needed to be installed for this course:\n\nR - Statistical Programming Language\nRStudio - Interactive Development Environment for\n\nUse the link here to install RStudio on your systems.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Course Outline",
+    "section": "",
+    "text": "Thinking in Statistics | With Applications in R",
+    "crumbs": [
+      "Course Outline"
+    ]
+  },
+  {
+    "objectID": "intro.html#thinking-in-statistics-with-applications-in-r",
+    "href": "intro.html#thinking-in-statistics-with-applications-in-r",
+    "title": "Course Outline",
+    "section": "",
+    "text": "Course Description:\nThis course explores fundamental statistical concepts with applied examples using R. It aims to provide a robust analytical framework to interpret the world quantitatively while appreciating the inherent uncertainties of empirical data.\nThe course structure would change and chapters would be added as we go along sequentially.\n\n\nCourse Objectives:\nBy the end of this course, reader will be able to:\n\nGrasp key statistical concepts and differentiate between population parameters and sample statistics.\nUse R to conduct data analysis, interpreting the results within the contexts of certainty, probability, and risk.\nCritically evaluate how statistical methods model and manage real-world uncertainties.\nCommunicate statistical findings effectively, acknowledging the limitations and assumptions underlying data interpretations.\n\n\n\nResources:\n\nThe jbstatistics youtube channel.\nWheelan, C. J. (2014). Naked statistics: Stripping the dread from the data (First published as a Norton paperback). W.W. Norton & Company.\nImai, K. (2017). Quantitative social science: An introduction. Princeton University Press.\n\n\n\nCourse Format:\nWeekly.\n\n\nSoftware Requirement:\nInstall R and RStudio on personal computers.\n\n\nWeekly Schedule:\n\nWeek 1: Introduction to Statistical Thinking\n\nDiscussion: The role of statistics in understanding truth and making decisions under uncertainty.\nLab: Introduction to R; installing R and RStudio; basic R commands.\n\n\n\nWeek 2: Populations and Samples\n\nDiscussion: Distinguishing between populations and samples; understanding parameters and statistics.\nLab: Sampling distributions and simulations in R.\n\n\n\nWeek 3: Descriptive Statistics: Telling Stories with Data\n\nDiscussion: Types of Variables - Categorical vs. Quantitative; Levels of Measurement (Nominal, Ordinal, Interval, Ratio).\nLab: Using R to organize and summarize different types of data; visualizing categorical and quantitative data distributions.\n\n\n\nWeek 4: The Concept of Probability in Statistics\n\nDiscussion: Probability as a tool for quantifying uncertainty; basic probability rules.\nLab: Probability experiments and simulations in R.\n\n\n\nWeek 5: Probability Distributions: Modeling Uncertainty\n\nDiscussion: Introduction to key probability distributions (normal, binomial).\nLab: Exploring distributions in R; applications in real-world data.\n\n\n\nWeek 6: Foundations of Inferential Statistics\n\nDiscussion: The logic and philosophy behind inferential statistics; hypothesis testing.\nLab: Performing hypothesis tests in R.\n\n\n\nWeek 7: Dummy Project with Dataset\n\nDiscussion: Review key concepts and techniques.\nLab: Use R for statistical analysis.\n\n\n\nWeek 8: Estimation: Seeking Truth Through Confidence\n\nDiscussion: Confidence intervals as expressions of precision and uncertainty.\nLab: Constructing confidence intervals in R for different parameters.\n\n\n\nWeek 9: Regression Analysis: Predicting and Explaining\n\nDiscussion: Linear regression models as tools for prediction and explanation under conditions of uncertainty.\nLab: Fitting and interpreting regression models in R.\n\n\n\nWeek 10: Testing Theories with Data\n\nDiscussion: Chi-square and ANOVA as methods for testing theoretical predictions against observed data.\nLab: Conducting and interpreting chi-square and ANOVA tests in R.\n\n\n\nWeek 11: Non-parametric Methods: When Assumptions Fail\n\nDiscussion: Introduction to non-parametric tests and their importance in statistics.\nLab: Applying non-parametric tests in R to real data.\n\n\n\nWeek 12: Causal Inference\n\nDiscussion: Potential Outcomes Framework and Directed Acyclic Graphs\nLab: TBD\n\n\n\nWeek 13: Synthesizing and Communicating Statistical Findings\n\nDiscussion: Best practices for synthesizing findings and communicating them to a non-specialist audience.\nLab: Preparing reports and presentations using R Markdown.\n\n\n\nWeek 14: TBD\n\nDiscussion and Lab: TBD.\nLab: TBD\n\n\n\nWeek 15: Next Steps\n\nDiscussion: TBD\nLab: TBD",
+    "crumbs": [
+      "Course Outline"
+    ]
+  },
+  {
+    "objectID": "week1-lecture.html",
+    "href": "week1-lecture.html",
+    "title": "Truth and Uncertainty: Role of Statistics",
+    "section": "",
+    "text": "This is a haywire (and hence, optional) discussion which I nevertheless would torture the listener with.\nStatistics serves as a crucial tool for knowledge creation, applicable across various fields and functions much like accounting or HR in any organization. It organizes and interprets observations—often large in number—using mathematical concepts to discern, describe, and derive insights from data. Ultimately, statistics aids in recognizing patterns in observations to explain past phenomena and, ambitiously, to predict future events.\nStatistics revolves around three meta concepts: truth, uncertainty, and chance. To illustrate, consider the question: Does drug X eliminate ailment Y in species Z?\nTo answer this, while logic based on scientific theories from the physical sciences might suggest whether Y is eliminated after administering X, empirical evidence is essential to establish the truth—determining whether X is effective against Y in Z.\nHowever, the truth in our world is not always straightforward. Suppose species Z consists of a large number of units (people, dogs, microbes, etc.). There may be characteristics in some units that make them more susceptible to Y and more likely to respond to X. This introduces two primary challenges in statistics:\nEstimation of Truth: Often, we cannot observe all units due to constraints, leading us to infer about the world through sample surveys.\nEstablishing Causality: Determining the causal relationship between variables is complex but crucial.\nBoth challenges revolve around finding an estimate of the truth in the world. Moreover, individual responses to drug X may vary, and even the same unit may show different responses over time. This variability introduces uncertainty in any estimate of truth, encompassing concepts like variance, variability, and heterogeneity.\n\n\n\n\n\n\nAlternatively, you can watch the following videos",
+    "crumbs": [
+      "Introduction to Statistical Thinking",
+      "Truth and Uncertainty: Role of Statistics"
+    ]
+  },
+  {
+    "objectID": "week1-lab.html",
+    "href": "week1-lab.html",
+    "title": "Intro to R",
+    "section": "",
+    "text": "R and RStudio\nR is a free open-source statistical programming language. We generally use R through RStudio which is an integrated development environment (IDE). Essentially, it is the graphic user interface that allows us to use R efficiently. It has point-and-click functionality also (which we would not use a lot).\nRStudio Screen\nR Scripts: This is where put your code in a script. The script is saved with a .R extension. An R script is a text file that you can read on text editors too. We use RStudio to run the code in a way that the computer understands.\nConsole: Output from your code appears here. You can also write the code directly here. But it does not get saved. Also, by default, it shows only a limited number of previous steps (commands + outputs). Not a good practice to code here.\nEnvironment: All the objects, datasets, lists, etc that you have created/loaded in the environment appear here. Alongside, you also see the custom functions that you might create.\nFile Browser/Help/Plot: Internal file navigator and help documentation for packages and functions appear here. Further, when you plot anything, that also gets shown here.\nComments: R interprets every line in the script as a separate command. And it does for each line unless preceded by a #. Comments signal to R that what follows the # is to be ignored.We use comments to write explanatory notes about the code. A comment should explain the purpose of a command or code and not just be a description of what it does.",
+    "crumbs": [
+      "Introduction to Statistical Thinking",
+      "Intro to `R`"
+    ]
+  },
+  {
+    "objectID": "week2-lecture.html",
+    "href": "week2-lecture.html",
+    "title": "How do we know a fact about the world?",
+    "section": "",
+    "text": "Statistical Inference: Learning About the Population from a Sample\nSince studying an entire population is often impossible, we rely on statistical inference, which is the process of drawing conclusions about a population based on data from a sample.\nThere are two main types of statistical inference:\nWe do these by getting a representative sample.",
+    "crumbs": [
+      "Populations and Samples",
+      "How do we know a fact about the world?"
+    ]
+  },
+  {
+    "objectID": "week2-lecture.html#what-is-a-random-variable",
+    "href": "week2-lecture.html#what-is-a-random-variable",
+    "title": "How do we know a fact about the world?",
+    "section": "What is a Random Variable?",
+    "text": "What is a Random Variable?\nA random variable (RV) is a numerical value whose outcome depends on a random experiment.\n\nTypes of Random Variables\n\nDiscrete Random Variable: Takes on a countable number of values.\n\nExample: Number of heads in 10 coin flips.\n\nContinuous Random Variable: Can take on infinitely many values within a range.\n\nExample: The height of a randomly chosen person.\n\n\nSince the outcome of a random variable is uncertain before observation, it follows a probability distribution (e.g., Binomial, Normal, etc.).",
+    "crumbs": [
+      "Populations and Samples",
+      "How do we know a fact about the world?"
+    ]
+  },
+  {
+    "objectID": "week2-lecture.html#why-is-a-statistic-a-random-variable",
+    "href": "week2-lecture.html#why-is-a-statistic-a-random-variable",
+    "title": "How do we know a fact about the world?",
+    "section": "Why is a Statistic a Random Variable?",
+    "text": "Why is a Statistic a Random Variable?\nA sample statistic is a random variable because: 1. It is computed from a random sample, meaning its value varies across different samples. 2. It has a probability distribution, known as the sampling distribution. 3. It is subject to sampling variability, meaning different samples lead to different statistic values. 4. It is used to estimate fixed population parameters, but each sample produces a different estimate.\nBy contrast, a population parameter is not a random variable because it is a fixed, though unknown, quantity describing the entire population.",
+    "crumbs": [
+      "Populations and Samples",
+      "How do we know a fact about the world?"
+    ]
+  },
+  {
+    "objectID": "week2-lecture.html#what-is-a-random-sample",
+    "href": "week2-lecture.html#what-is-a-random-sample",
+    "title": "How do we know a fact about the world?",
+    "section": "What is a Random Sample?",
+    "text": "What is a Random Sample?\nA random sample is a subset of a population selected in such a way that every member of the population has a known, nonzero probability of being included. The key characteristic of a random sample is that it is selected without bias, ensuring that it represents the population as accurately as possible.\n\nCharacteristics of a Random Sample\n\nEach member of the population has a chance of being selected\n\nIn a simple random sample (SRS), every individual has an equal probability of being chosen.\nOther sampling methods (e.g., stratified or cluster sampling) ensure that different groups have appropriate representation.\n\nThe selection is independent\n\nThe inclusion of one individual does not affect the inclusion of another.\n\nThe sample should be representative of the population\n\nA well-selected random sample helps ensure that inferences made about the population are valid.\n\n\n\n\nTypes of Random Sampling\n\n\n\n\n\n\n\n\nSampling Method\nDescription\nExample\n\n\n\n\nSimple Random Sampling (SRS)\nEvery individual in the population has an equal chance of selection.\nDrawing names from a hat.\n\n\nStratified Sampling\nPopulation is divided into subgroups (strata), and a random sample is taken from each.\nSelecting students from different grade levels proportionally.\n\n\nCluster Sampling\nThe population is divided into clusters, and entire clusters are randomly selected.\nChoosing entire schools randomly instead of individual students.\n\n\nSystematic Sampling\nSelecting every (n)th individual from a list.\nPicking every 10th person from a customer list.\n\n\n\n\n\nWhy is Random Sampling Important?\n\nMinimizes bias: Ensures that sample selection is not influenced by external factors.\nAllows for generalization: Properly selected samples help make valid statistical inferences about the population.\nForms the foundation of probability theory: Many statistical techniques assume randomness in data selection.\n\n\n\n\n\n\n\n\nComparison Table\n\n\n\n\n\n\n\n\n\n\n\n\nConcept\nDefinition\nRandom Variable?\nExample\n\n\n\n\nParameter\nA fixed numerical value describing a population\n❌ No\nPopulation mean\n\n\nRandom Variable\nA numerical outcome of a random experiment\n✅ Yes\nNumber of heads in coin flips",
+    "crumbs": [
+      "Populations and Samples",
+      "How do we know a fact about the world?"
+    ]
+  },
+  {
+    "objectID": "week2-lecture.html#key-takeaways",
+    "href": "week2-lecture.html#key-takeaways",
+    "title": "How do we know a fact about the world?",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nA parameter is a fixed (but unknown) value for a population.\nA statistic is calculated from a sample and varies with different samples.\nA statistic is a random variable because its value depends on the random selection of the sample.\nA random sample ensures fairness and reduces bias in statistical studies.\nStatistical inference uses sample statistics to estimate population parameters.\n\nUnderstanding these distinctions is essential for correctly interpreting results in inferential statistics!",
+    "crumbs": [
+      "Populations and Samples",
+      "How do we know a fact about the world?"
+    ]
+  },
+  {
+    "objectID": "week2-lecture.html#illustrative-example",
+    "href": "week2-lecture.html#illustrative-example",
+    "title": "How do we know a fact about the world?",
+    "section": "Illustrative Example",
+    "text": "Illustrative Example\n\n\n\n\n\n\nNote\n\n\n\nTo solidify our understanding of parameters, statistics, random variables, and random samples, let’s consider the question:\n“Does Drug X treat Ailment Y in Species Z?”\nWe will define these concepts using concrete values.\n\n1. Defining the Population and Sample\n\nPopulation: All members of species Z who have ailment Y.\nSample: A randomly selected group of 200 individuals from this population.\n\n\n\n2. Population Parameter (Fixed but Unknown)\nThe true effectiveness rate of Drug X in the entire population is a parameter. - Suppose the actual proportion of individuals in the entire population who recover with Drug X is \\(p = 0.75\\) (i.e., 75% recover). - Since this value is for the entire population, it is fixed but typically unknown.\n\n\n3. Sample Statistic (Random and Varies with Sample)\nWe randomly select 200 individuals from the population and administer Drug X. After a treatment period, we find that 148 individuals recovered. - The sample proportion of recovery is: \\[ \\hat{p} = \\frac{148}{200} = 0.74 \\] - This is a statistic because it is computed from the sample. - If we repeat this experiment with a different sample, we might get a different recovery rate (e.g., 0.72, 0.76, etc.), showing that the sample statistic is not fixed.\n\n\n4. Random Variable Interpretation\nSince the sample statistic (\\(\\hat{p}\\)) changes with different samples, it is a random variable. - The sampling distribution of \\(\\hat{p}\\) follows an approximate normal distribution when the sample size is large. - Its mean is approximately equal to the population proportion: \\[E[\\hat{p}] = p = 0.75\\] - The variability of \\(\\hat{p}\\) depends on the sample size: \\[\\text{Standard error} = \\sqrt{ \\frac{p(1 - p)}{n} } = \\sqrt{ \\frac{0.75(0.25)}{200} } \\approx 0.03\\] - This distribution allows us to make inferences about the true population proportion.\n\n\n5. Random Sampling and Bias Avoidance\nTo ensure valid conclusions, the sample must be randomly selected: - Simple Random Sample (SRS): Each individual in the population has an equal chance of being selected. - Stratified Sampling: If species Z has multiple subgroups (e.g., age groups), we may ensure each is proportionally represented. - Cluster Sampling: If studying individuals across multiple habitats, we may randomly select some entire habitats.\n\n\n6. Conclusion\nIn this example: - \\(p = 0.75\\) (Population parameter) is fixed but unknown. - \\(\\hat{p} = 0.74\\) (Sample statistic) varies across samples, making it a random variable. - The more samples we take, the closer our estimates of \\(p\\) become, thanks to statistical inference.\nBy using random sampling, appropriate statistical methods, and understanding the nature of statistics as random variables, we can draw reliable conclusions about Drug X’s effectiveness in treating Ailment Y in Species Z.",
+    "crumbs": [
+      "Populations and Samples",
+      "How do we know a fact about the world?"
+    ]
+  },
+  {
+    "objectID": "week2-lecture2.html",
+    "href": "week2-lecture2.html",
+    "title": "Levels of Measurement and Types of Variables",
+    "section": "",
+    "text": "Levels of Measurement and Types of Variables\nIn statistics, data is classified into four levels of measurement:",
+    "crumbs": [
+      "Populations and Samples",
+      "Levels of Measurement and Types of Variables"
+    ]
+  },
+  {
+    "objectID": "week2-lecture2.html#levels-of-measurement-and-types-of-variables",
+    "href": "week2-lecture2.html#levels-of-measurement-and-types-of-variables",
+    "title": "Levels of Measurement and Types of Variables",
+    "section": "",
+    "text": "Level of Measurement\nDefinition\nExamples\nType of Variable\n\n\n\n\nNominal\nCategories without any meaningful order\nTreatment type (Drug X vs. Placebo)\nQualitative (Categorical)\n\n\nOrdinal\nOrdered categories, but differences are not meaningful\nPain level (Mild, Moderate, Severe)\nQualitative (Categorical)\n\n\nInterval\nOrdered, meaningful differences, but no true zero\nTemperature in °C\nQuantitative (Continuous)\n\n\nRatio\nOrdered, meaningful differences, and a true zero exists\nDosage of Drug X (mg), Recovery time (days)\nQuantitative (Continuous)",
+    "crumbs": [
+      "Populations and Samples",
+      "Levels of Measurement and Types of Variables"
+    ]
+  },
+  {
+    "objectID": "week2-lecture2.html#how-levels-of-measurement-relate-to-random-variables",
+    "href": "week2-lecture2.html#how-levels-of-measurement-relate-to-random-variables",
+    "title": "Levels of Measurement and Types of Variables",
+    "section": "How Levels of Measurement Relate to Random Variables",
+    "text": "How Levels of Measurement Relate to Random Variables\nA random variable represents a numerical outcome of a random process. The level of measurement determines how a random variable is categorized:\n\n\n\n\n\n\n\n\n\nLevel of Measurement\nType of Variable\nRandom Variable Type\nExample\n\n\n\n\nNominal\nCategorical\nDiscrete\nTreatment group (Drug X vs. Placebo)\n\n\nOrdinal\nCategorical\nDiscrete\nPain level (Mild, Moderate, Severe)\n\n\nInterval\nQuantitative\nContinuous\nTemperature in °C\n\n\nRatio\nQuantitative\nContinuous\nRecovery time (days), Drug dosage (mg)\n\n\n\n\nTypes of Random Variables\n\nDiscrete Random Variables\n\nAssociated with nominal and ordinal levels.\nTake on countable values (e.g., number of patients recovering).\nFollow distributions such as Binomial and Poisson.\n\nContinuous Random Variables\n\nAssociated with interval and ratio levels.\nCan take infinitely many values within a range (e.g., drug dosage, time to recovery).\nFollow distributions such as Normal and Exponential.\n\n\n\n\n\n\n\n\n\nIllustrative Example: Drug X and Ailment Y Study\n\n\n\nTo better understand these concepts, let’s apply them to a real-world study.\n\nScenario:\nA researcher is investigating whether Drug X effectively treats Ailment Y in Species Z. The study involves: - Administering Drug X or a placebo to a random sample of 200 patients. - Measuring recovery time, pain levels, and body temperature after treatment.\n\n\nIdentifying Levels of Measurement and Random Variables:\n\n\n\n\n\n\n\n\n\nVariable\nLevel of Measurement\nRandom Variable Type\nExample Data\n\n\n\n\nTreatment Group (Drug X or Placebo)\nNominal\nDiscrete\nDrug X, Placebo\n\n\nPain Level (Mild, Moderate, Severe)\nOrdinal\nDiscrete\nMild, Moderate, Severe\n\n\nBody Temperature (°C)\nInterval\nContinuous\n36.5°C, 37.8°C\n\n\nDosage of Drug X (mg)\nRatio\nContinuous\n50mg, 100mg\n\n\nRecovery Time (Days)\nRatio\nContinuous\n3 days, 5 days\n\n\n\n\n\nUnderstanding Why a Statistic is a Random Variable\n\nThe researcher collects data on recovery time from different patients.\nThe sample mean recovery time is a statistic.\nIf the study were repeated with another sample, the sample mean would change.\nTherefore, the sample mean is a random variable, as it follows a probability distribution.\n\n\n\nConclusion\nBy aligning levels of measurement with types of random variables, researchers can make better decisions about statistical methods and interpretations. In this study, correctly identifying these variables ensures valid conclusions about Drug X’s effectiveness.",
+    "crumbs": [
+      "Populations and Samples",
+      "Levels of Measurement and Types of Variables"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html",
+    "href": "week2-labn.html",
+    "title": "Lab: Data In R",
+    "section": "",
+    "text": "1. Introduction\nThis document provides an introduction to R programming, covering essential concepts like variables, measurement levels, population, and sample statistics. The guide includes practical code examples to illustrate these fundamental statistical concepts using R.",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#basics-of-r",
+    "href": "week2-labn.html#basics-of-r",
+    "title": "Lab: Data In R",
+    "section": "2. Basics of R",
+    "text": "2. Basics of R\n\nAssignment Operator in R\nR uses &lt;- as the assignment operator. The object (container) on the left stores the values/data assigned from the right.\nSyntax:\n\nobject &lt;- value/data\n\nMore on objects in the next section.\n\nExercise 1Code 1\n\n\n\nCreate a new .R script and save it.\nUse R as a calculator:\n\nAdd two numbers\nMultiply three numbers\nPrint your name\n\nRun each command separately using cmd + Enter / ctrl + Enter.\nAssign the outputs to objects.\nPrint the objects using paste().\nRun the whole file.\n\n\n\nYou can create a new script using ctrl + shift + n\nOr navigate to File &gt; New file &gt; R script.\nSave using Ctrl + S and add .R as a suffix.\n\n# Basic Operations\n2 + 7\n56 * 9 * 33\nprint(\"Your Name\")\n\n# Assigning results to objects\nsum_2 &lt;- 2 + 7\nprod_3 &lt;- 56 * 9 * 33\nname &lt;- \"Your Name\"\n\n# Printing with description\npaste(\"Sum of 2 and 7 is\", sum_2)\npaste(\"Product of 56, 9 and 33 is\", prod_3)\npaste(\"This R code was written by\", name)",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#objects-and-datatypes",
+    "href": "week2-labn.html#objects-and-datatypes",
+    "title": "Lab: Data In R",
+    "section": "3. Objects and Datatypes",
+    "text": "3. Objects and Datatypes\nEverything in R is called an “object”\nObjects contain data. R has five basic classes/datatypes:\n\nCharacter - (“abc”)\nNumeric - (real numbers: 1, 7.5)\nInteger - (whole numbers: 1, 2, -896)\nLogical - (TRUE, FALSE)\nComplex - (1+0i, 2+4i)\n\n\n\n\n\n\n\nExercise 2\n\n\n\nRun the following code in the same script that we created\n\nclass(sum_2)\nclass(prod_3)\nclass(name)",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#data-structures",
+    "href": "week2-labn.html#data-structures",
+    "title": "Lab: Data In R",
+    "section": "4. Data Structures",
+    "text": "4. Data Structures\n\nVectors\nVectors store elements of the same datatype.\nWe can create a vector using the c() command.\n\na_num &lt;- c(0,0.7,9,2,3,4,-1)            # numeric or double\n\nb_logical &lt;- c(TRUE,FALSE,TRUE,TRUE,TRUE) # logical\n\nc_logical &lt;- c(T,F,T,T,T) # also logical - Never use T and F as it leads to errors in analysis\n\nd_char &lt;- c(\"Sheila\", \"Nila\", \"Camilla\")  # character\n\ne_int &lt;- 1:20 # integer\n\nf_int &lt;- c(1,2,3,4,5)  # integer\n\ng_int &lt;- c(1+0i,2+4i) # complex numbers\n\nAccessing Elements in Vectors\n\na_num[1]  # First element\na_num[3]  # Third element\na_num[1:3] # First three elements\n\nBasic vectors are uni-dimensional. We can make a two dimensional vector, which is called matrix.\n\n\nMatrices\n\nm_1 &lt;- matrix(nrow=3, ncol=4)\ndim(m_1)\n\nm_2 &lt;- matrix(1:10, nrow=3, ncol=4)\nm_3 &lt;- matrix(1:18, nrow=9, ncol=2)\n\n\n# Creating Blank Matrix\nm_1 &lt;- matrix(nrow=3,ncol=4)\nm_1      \n\n     [,1] [,2] [,3] [,4]\n[1,]   NA   NA   NA   NA\n[2,]   NA   NA   NA   NA\n[3,]   NA   NA   NA   NA\n\ndim(m_1)\n\n[1] 3 4\n\n\n\n?matrix # Help documentation\n\n# Creating Matrix with elements\n\nm_2 &lt;- matrix(1:10, nrow = 3, ncol = 4) # Why the warning?\nm_2\n\n# With correct number of elements\nm_3 &lt;- matrix(1:18, nrow=9, ncol=2))\nm3\n\nLogic of matrices\nMatrices are constructed column-wise. So, it fills the upper left corner, and then runs down along.\nIndexing in matrices\n\n# Rows & Columns ----    \n# Very simply the syntax is:  (2,3) = (Rows, Columns)\n# m[1,] - 1st row\n# m[2,] - 2nd row\n# m[,3] - 3rd column  \n# m[,5] - 5th column\n# m[,7] - 7th column\n\nAccessing Elements in Matrices\n\nm_2[1,]  # First row\nm_2[,2]  # Second column\nm_2[2,3] # Element at second row, third column\n\nBinding Vectors into Matrices\n\nx &lt;- 1:3\ny &lt;- 4:6\nz &lt;- c(\"Camilla\",\"Nila\",\"Duflo\",\"Akbar\")\n\nrbind(x,y) # Row-wise binding\ncbind(x,y) # Column-wise binding\n\n\n# What if you already have a vector?\n# Example: You have received a list of students who have skipped school today.\n# You know which section they are in, and want to create a matrix.\nk &lt;- c(\"Hashem\", \"John\", \"Cecillia\", \"Minha\", \"Parushya\", \"Keeheon\")\nk\n\n[1] \"Hashem\"   \"John\"     \"Cecillia\" \"Minha\"    \"Parushya\" \"Keeheon\" \n\ndim(k) &lt;- c(3,2)\nk\n\n     [,1]       [,2]      \n[1,] \"Hashem\"   \"Minha\"   \n[2,] \"John\"     \"Parushya\"\n[3,] \"Cecillia\" \"Keeheon\" \n\ncolnames(k) &lt;- c(\"Section A\", \"Section B\")\n\nk\n\n     Section A  Section B \n[1,] \"Hashem\"   \"Minha\"   \n[2,] \"John\"     \"Parushya\"\n[3,] \"Cecillia\" \"Keeheon\" \n\nrownames(k) &lt;- c(\"Student 1\", \"Student 2\", \"Student 3\")\n\nk\n\n          Section A  Section B \nStudent 1 \"Hashem\"   \"Minha\"   \nStudent 2 \"John\"     \"Parushya\"\nStudent 3 \"Cecillia\" \"Keeheon\" \n\n\n\n\nLists\nAccessing elements in a List\nIf we want to create something that stores objects of different classes together, we use another data structure called list.\nA list can contain two or more classes of objects with different lengths.\n\n\n\n\n\n\nCreating lists\n\nlist_1 &lt;- list(\"a\" = 2.5, \"b\" = TRUE, \"c\" = 1:3)\n\nlist_1\n\n$a\n[1] 2.5\n\n$b\n[1] TRUE\n\n$c\n[1] 1 2 3\n\n\nWe created a list with objects of three different types - numeric, logical, and integer vector.\n\n# Structure of the list\nstr(list_1)\n\nList of 3\n $ a: num 2.5\n $ b: logi TRUE\n $ c: int [1:3] 1 2 3\n\n\nWe can also create a list with existing vectors.\n\n# A new vector\nname_vec &lt;- c(\"Camilla\",\"Nila\",\"Duflo\",\"Akbar\")\n\n# And then lets use the vectors we already have in the environment\nlist_2 &lt;- list(name_vec, c_logical, d_char, f_int, e_int, a_num)\nlist_2\n\n\n# let's check the classes of objects\nclass(list_2[[2]])\nclass(list_2[[3]])\n\n# And their lengths\nlength(list_2[[2]])\nlength(list_2[[3]])\n\nAccessing elements in a List\nBy indices in a list\n\n# So lists are printed differently, and elements of a list will have [[]] i.e 2 brackets.    \n\nlist_2\n\n\n## Accessing elements | run each of the follwing lines and see the output\nlist_2[[2]] \nlist_2[2]\nlist_2[1][2]\nlist_2[[1]][1]\nlist_2[[1]][[1]]\nlist_2[[1]][2]\n\nBy using names or tags\n\nlist_3 &lt;- list(name = \"John\", age = 19, speaks = c(\"English\", \"French\"))\n\n# access elements by name\nlist_3$name\nlist_3$age\nlist_3$speaks\n\n# access elements by integer index\nlist_3[c(1, 2)]\nlist_3[-2]\n\n# access elements by logical index\nlist_3[c(TRUE, FALSE, FALSE)]\n\n# access elements by character index\nlist_3[c(\"age\", \"speaks\")]\n\nModifying lists\nAdding components in a list\n\nlist_4 &lt;- list(name = \"Clair\", age = 19, speaks = c(\"English\", \"French\"))\n\n# assign a new element to the list using double brackets [[]]\nlist_4[[\"married\"]] &lt;- FALSE\n\n# print the updated list\nlist_4\n\n$name\n[1] \"Clair\"\n\n$age\n[1] 19\n\n$speaks\n[1] \"English\" \"French\" \n\n$married\n[1] FALSE\n\n\nDeleting components in a list\n\nlist_5 &lt;- list(name = \"Clair\", age = 19, speaks = c(\"English\", \"French\"))\n\n# remove an element from the list using double brackets [[]]\nlist_5[[\"age\"]] &lt;- NULL\n\n# print the structure of the updated list\nstr(list_5)\n\n# remove an element from the list using $ notation\nlist_5$married &lt;- NULL\n\n# print the structure of the updated list\nstr(list_5)\n\n\n\n\n\n\nFactors\nFactors are used for categorical data - both nominal and ordinal ones.\nFactors are treated as a separate datatype in R. Technically, factors are stored as a vector of integer values corresponding to the character type objects which they are used to represent.\n\n\n\n\n\n\nYou can define a factor by using factor() command.\n\nvec_1 &lt;- c(\"yes\", \"no\", \"yes\")\n\nfct_1 &lt;- factor(c(\"yes\", \"no\", \"yes\"))\n\n# Notice the difference in outputs\n\nvec_1\n\nfct_1\n\n\n# Btw, table() command cn be used in R for cross-tabulations\n# with both vector and factor datatypes. \n\ntable(vec_1)\ntable(fct_1)\n\nOrdering Factors\nSometimes it is essential to specify the orders of your factor levels. Particularly during modelling and estimation with binary or categorical variables, given that the first level of factor is used in most functions, like lm(linear regression command in R), will be treated as baseline level or category.\nFor example, we have a variable measuring dose of vaccine administered (placebo, medium, high). Here specifying order becomes important as all measurements of the treatment efficacy will have to be with respect to the baseline category.\nWe use levels() within factor() command to do this.\n\nfct_2 &lt;- factor(c(\"High\", \"High\", \"Medium\", \"Medium\", \"High\", \"High\",\"Placebo\"))\nfct_2   \n\n# (Order is often determined using alphabetical variables by default) (H-M-P)\n\n# Ordering it\nfct_2 &lt;- factor(c(\"Placebo\", \"High\", \"Medium\", \"Placebo\", \"Medium\", \n            \"Medium\", \"High\", \"High\"),\nlevels = c(\"Placebo\",\"Medium\",\"High\"))\n\nfct_2",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#data-frames",
+    "href": "week2-labn.html#data-frames",
+    "title": "Lab: Data In R",
+    "section": "5. Data Frames",
+    "text": "5. Data Frames\nData frames store data in a tabular format.\n\ndf_1 &lt;- data.frame(\n    Foo = 15:18, \n    Bar = c(T, F, T, T), \n    Name = c(\"Penny\", \"Sheldon\", \"Rajesh\", \"Leonard\")\n)\n\nExploring the contents and structure of the dataframe\n\n# Viewing dataframe\ndf_1 # In Console\nView(df_1)  # In Viewer\n\n# structure of dataframe\nstr(df_1)\n\n# Names of columns/variables\nnames(df_1)\n\n# Dimesnions of Dataframe\nnrow(df_1)      \nncol(df_1)\ndim(df_1)\n\n# Summary of dataframe\nsummary(df_1) # See the output closely | very useful for understanding the dataset\n\nAccessing the objects inside dataframe\n\ndf_1[1]      # First column\ndf_1[['Bar']] # Accessing column using column name\ndf_1$Bar      # Accessing column using dollar sign\ndf_1[1,3]    # Accessing specific element (1st row, 3rd column)\n\n\n# Access Items using [] \ndf_1[1]\n \n# Access Items using [[]]\ndf_1[['Bar']]\n \n# Access Items using $\ndf_1$Bar\n\n# Access particular data point\ndf_1$Foo[3]\n\n# what will be the output?\ndf_1[1,3]\n\nTidyverse package has a very efficient framwork for working with dataset. Check the tidyverse book from day 2 for the same. :::",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#reading-and-writing-data",
+    "href": "week2-labn.html#reading-and-writing-data",
+    "title": "Lab: Data In R",
+    "section": "6. Reading and Writing Data",
+    "text": "6. Reading and Writing Data\n\n\n\n\n\nRStudio Screen\n\n\n\n\n\nWorking Directory\n\ngetwd() # Get current working directory\nsetwd(\"&lt;your directory path&gt;\") # Set new working directory\nlist.files()  # List files in the working directory\n\n\n\nReading Data Files\n\nread.csv(\"FileName.csv\") # Reads CSV files\nreadxl::read_excel(\"Pathname/filename.xlsx\") # Reads Excel files\nhaven::read_dta(\"Pathname/filename.dta\") # Reads Stata files\n\n# Example:\ndataframe1 &lt;- read.csv(\"&lt;file path&gt;\")\n\n\n\nWriting Data Files\n\nwrite.csv(df_1, \"output.csv\") # Saves data frame as CSV file\nwrite.xlsx(df_1, \"output.xlsx\") # Saves data frame as Excel file\nsaveRDS(df_1, \"df_1.rds\") # Saves data frame as RDS file",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#population-sample-and-statistics-in-r",
+    "href": "week2-labn.html#population-sample-and-statistics-in-r",
+    "title": "Lab: Data In R",
+    "section": "7. Population, Sample, and Statistics in R",
+    "text": "7. Population, Sample, and Statistics in R\n\n# Generating a random sample from a population\npopulation &lt;- 1:1000\nsample_50 &lt;- sample(population, 50, replace = FALSE)\nmean(sample_50)  # Sample mean as a statistic",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#packages",
+    "href": "week2-labn.html#packages",
+    "title": "Lab: Data In R",
+    "section": "8. Packages",
+    "text": "8. Packages\nPackages in R are containers for functions. Many packages come pre-installed with R.\n\n# Check available packages\nlibrary()\n\nYou can install packages from CRAN (Comprehensive R Archive Network):\n\ninstall.packages(\"tidyverse\") # Run once\nlibrary(tidyverse) # Load package into session",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#conclusion",
+    "href": "week2-labn.html#conclusion",
+    "title": "Lab: Data In R",
+    "section": "7. Conclusion",
+    "text": "7. Conclusion\nThis document introduced variables, measurement levels, populations, samples, and statistics, along with basic R operations for working with them. Understanding these concepts ensures proper data handling and meaningful statistical analysis in R.",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#illustrative-example-drug-x-and-ailment-y-study",
+    "href": "week2-labn.html#illustrative-example-drug-x-and-ailment-y-study",
+    "title": "Lab: Data In R",
+    "section": "Illustrative Example: Drug X and Ailment Y Study",
+    "text": "Illustrative Example: Drug X and Ailment Y Study\n\n\n\n\n\n\nExample Code\n\n\n\nCopy this code in a new R Script and run line-by-line\n\n# Illustrative Example: Drug X and Ailment Y Study\n\n# Setting up the population\nset.seed(123)  # For reproducibility\npopulation_size &lt;- 10000\n\n# Creating a data frame representing the population\ndrug_study_population &lt;- data.frame(\n    id = 1:population_size,  # Integer type: unique identifier for each individual\n    treatment_group = sample(c(\"Drug X\", \"Placebo\"), population_size, replace = TRUE),  # Categorical variable\n    pain_level = sample(c(\"Mild\", \"Moderate\", \"Severe\"), population_size, replace = TRUE, prob = c(0.5, 0.3, 0.2)),  # Ordered categorical variable\n    temperature = round(rnorm(population_size, mean = 37, sd = 1), 1),  # Numeric (continuous) variable: body temperature\n    dosage = sample(c(50, 100, 150), population_size, replace = TRUE),  # Numeric (discrete) variable: dosage in mg\n    recovery_time = round(rnorm(population_size, mean = 7, sd = 2), 1)  # Numeric (continuous) variable: days to recover\n)\n\n# Viewing the first few rows\nhead(drug_study_population)\n\n# Taking a random sample of 500 individuals from the population\nsample_size &lt;- 500\nsample_data &lt;- drug_study_population[sample(1:population_size, sample_size), ]\n\n# Checking summary statistics of the sample\nsummary(sample_data)\n\n# Analyzing the mean recovery time for each treatment group\naggregate(recovery_time ~ treatment_group, data = sample_data, mean)\n\n# Converting pain_level into an ordered factor (Ordinal categorical variable)\nsample_data$pain_level &lt;- factor(sample_data$pain_level, levels = c(\"Mild\", \"Moderate\", \"Severe\"), ordered = TRUE)\n\n# Checking the structure of the modified dataset\nstr(sample_data)  # Displays data types of all variables\n\n# Saving the sample data to a CSV file\nwrite.csv(sample_data, \"drug_study_sample.csv\", row.names = FALSE)\n\n# Reading the saved file back into R\ndrug_sample_read &lt;- read.csv(\"drug_study_sample.csv\")\n\n# Displaying first few rows of the imported dataset\nhead(drug_sample_read)",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  },
+  {
+    "objectID": "week2-labn.html#additional-links",
+    "href": "week2-labn.html#additional-links",
+    "title": "Lab: Data In R",
+    "section": "Additional Links",
+    "text": "Additional Links\n\nOn Coding Practices\n\n\nCode and Data for the Social Sciences:A Practitioner’s Guide, by Gentzkow and Shapiro\nR Tidyverse Coding Style Guide\nPolitical Methodologist Perspective\n\n\nOn Tidyverse\n\n\nR for DataScience, by Hadley Wickham et al.\n\nThis is a highly recommended book written by creators of tidyverse.\n\n\n\nTutorials for R Programming\n\n\nIntro to R Programming\nAnother Intro to R\n\nR Cheatsheets Link",
+    "crumbs": [
+      "Populations and Samples",
+      "Lab: Data In R"
+    ]
+  }
+]
